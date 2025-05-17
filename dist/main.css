@@ -1,3 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+span {
+  cursor: pointer;
+}
+
+.header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: #ff8b00;
+  text-shadow: 0 0 0.5rem #000;
+  box-shadow: 0 0 0.25rem #000;
+  z-index: 2;
+}
+.header__logo {
+  width: 10rem;
+  height: 4rem;
+}
+
+.shop {
+  width: 100%;
+  height: 24rem;
+  background-image: url("./../assests/img/spicy-noodle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+.shop__container {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.shop__heading {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+.shop__score {
+  font-size: 1em;
+  color: #ff8b00;
+  text-decoration: none;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+.shop__sort {
+  width: 100%;
+  height: 3rem;
+  background-color: #f9f5f2;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.shop__sort--link {
+  text-decoration: none;
+  padding-right: 0.75rem;
+  color: #000;
+}
+
+.shop__container--img {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10000rem;
+  left: 37.5%;
+  top: -3rem;
+  border: 0.35rem solid #fff;
+}
+
+.shop__menu {
+  width: 100%;
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  flex-direction: column;
+}
+
+.shop__menu--heading {
+  padding-bottom: 1.5rem;
+}
+
+.card-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  height: 7rem;
+  border: 0.15rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-menu-text {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-price {
+  color: #ff8b00;
+}
+
+.btn {
+  border: unset;
+  margin: 0.25rem;
+  background-color: unset;
+  color: #ff8b00;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-container {
+  border-bottom: 0.15rem solid rgba(0, 0, 0, 0.5);
+  border-left: 0.15rem solid rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0.1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-container:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 25%;
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 1rem;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+.cart__heading {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.025rem solid rgba(0, 0, 0, 0.5);
+}
+
+.cart-item-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.btn-amount {
+  border: unset;
+  background-color: unset;
+  color: #ff8b00;
+  font-size: 1.3rem;
+  padding-right: 0.5rem;
+}
+
+.btn-amount-plus {
+  padding-left: 0.5rem;
+}
+
+.btn-delete {
+  border: unset;
+  background-color: unset;
+  color: #ff8b00;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  flex-direction: row;
+}
+
+.cart__container {
+  padding: 1rem;
+}
+
+.btn-amount-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.cart-item {
+  border-bottom: 0.025rem solid rgba(0, 0, 0, 0.5);
+}
+
+.cart-total-container {
+  padding-top: 1rem;
+}
+
+.cart-empty {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-top: 4rem;
+  text-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.2);
+}
 
 /*# sourceMappingURL=main.css.map */

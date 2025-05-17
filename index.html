@@ -4,7 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/main.css" />
+    <script src="./scripts/objects.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./scripts/app.js" defer></script>
     <title>Bestell-App</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assests/img/Bestell App- Logo.svg"
+        alt=""
+      />
+    </header>
+    <section class="shop">
+      <div class="shop__container">
+        <img
+          class="shop__container--img"
+          src="./assests/img/food-2202352_640.jpg"
+          alt=""
+        />
+        <h3 class="shop__heading">Pizza Express</h3>
+        <a class="shop__score" href="#">Bewerung (4.3 von 5)</a>
+        <div class="shop__sort">
+          <img src="./assests/img/icons8-vorwärts-48.png" alt="" />
+          <a class="shop__sort--link" href="#">Hauptgericht</a>
+          <a class="shop__sort--link" href="#">Beilage</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="shop__menu">
+        <h3 class="shop__menu--heading">Hauptgerichte</h3>
+        <div id="dishes"></div>
+      </div>
+      <section>
+        <div class="cart">
+          <h3 class="cart__heading">Warenkorb</h3>
+          <div id="cart" class="cart__container"></div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
